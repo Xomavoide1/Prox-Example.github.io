@@ -3,12 +3,12 @@
 <html>
 <head>
 	<title>Access Code Popup</title>
-	<script>
+		<script>
 		function checkAccess() {
-			var accessCodes = ["accesscode1", "accesscode2", "accesscode3"]; // Replace with your access code
+			var accessCodes = ["accesscode1", "accesscode2", "accesscode3"]; // Replace with your access codes
 			var userInput = document.getElementById("access-input").value;
 			
-			if (userInput === accessCode) {
+			if (accessCodes.includes(userInput)) {
 				document.getElementById("access-popup").style.display = "none";
 			} else {
 				alert("Access denied!");
