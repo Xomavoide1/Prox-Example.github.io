@@ -7,7 +7,7 @@
 		<script>
 		function checkAccess() {
 			var accessCodes = ["!t$S{T\n4,%SPyD#", "B<6vB;_c_'3KDUR,", "Yb/qh5L;[B34[[Q}", "Q]`w9f@:Sh*SWG.>", "X,9p=q,<cfPAS8gm", "qGgzWtNhN8]9q(_e"]; // Replace with your access codes
-			var userInput = document.getElementById("access-input").value;
+			var userInput = document.getElementById("access-input1").value;
 			
 			if (accessCodes.includes(userInput)) {
 				document.getElementById("access-popup").style.display = "none";
@@ -69,7 +69,7 @@
 	<div id="access-popup">
 		<div id="access-form">
 			<h2>Enter access code:</h2>
-			<input type="text" id="access-input" placeholder="Access code">
+			<input type="text" id="access-input1" placeholder="Access code">
 			<button onclick="checkAccess()">Submit</button>
 		</div>
 	</div>
@@ -89,12 +89,7 @@
         
     </center>
 	    
-	    <center>
-        <form>
-            <input placeholder="Search the web">
-        </form>
-        
-    </center>
+	  
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="index.js"></script>
